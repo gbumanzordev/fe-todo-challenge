@@ -1,0 +1,83 @@
+
+
+// Display
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  &.font-bold {
+    font-weight: 700;
+  }
+}
+
+.header-size-xl {
+  font-size: 64px;
+  line-height: 88px;
+}
+
+.header-size-l {
+  font-size: 56px;
+  line-height: 72px;
+}
+
+.header-size-m {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.header-size-s {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.header-size-xs {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+// Body
+
+p,
+span,
+a,
+li,
+div {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  &.font-bold {
+    font-weight: 600;
+  }
+}
+
+.text-size-xl {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text-size-l {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.text-size-m {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.text-size-s {
+  font-size: 13px;
+  line-height: 20px;
+}

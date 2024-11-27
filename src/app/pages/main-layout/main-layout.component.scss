@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 232px 1fr;
+  grid-gap: 36px;
+  height: 100%;
+}
+
+article {
+  height: 100%;
+  overflow: hidden;
+}
+
+section {
+  margin-top: 32px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,22 @@
+$sm: 32px;
+$md: 40px;
+$lg: 48px;
+
+.avatar {
+  border-radius: 50%;
+
+  &-sm {
+    width: $sm;
+    height: $sm;
+  }
+
+  &-md {
+    width: $md;
+    height: $md;
+  }
+
+  &-lg {
+    width: $lg;
+    height: $lg;
+  }
+}

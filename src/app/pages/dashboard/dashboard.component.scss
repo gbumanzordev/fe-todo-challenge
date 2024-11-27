@@ -1,0 +1,5 @@
+.lanes {
+  display: grid;
+  grid-template-columns: repeat(3, 348px);
+  gap: 32px;
+}

@@ -1,0 +1,11 @@
+<nav>
+  <span class="search-icon"><img src="/icons/magnifying-glass.svg" alt="" /></span>
+  <input type="text" [formControl]="searchControl" placeholder="Search" />
+  <span class="clear">
+    @if (searchControl.value?.trim()?.length) {
+      <img src="/icons/close.svg" alt="" />
+    }
+  </span>
+  <span class="notifications"><img src="/icons/notification-bell.svg" alt="" /></span>
+  <app-avatar size="md" imageUrl="https://picsum.photos/200"></app-avatar>
+</nav>

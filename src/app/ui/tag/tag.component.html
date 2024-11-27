@@ -1,0 +1,6 @@
+<div [class]="'tag tag-' + severity()">
+  @if (displayControl()) {
+    <input type="checkbox" [id]="'tag-checkbox-' + severity()" [formControl]="control" />
+  }
+  <label [for]="'tag-checkbox-' + severity()"><ng-content></ng-content></label>
+</div>

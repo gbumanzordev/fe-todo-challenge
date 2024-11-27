@@ -1,0 +1,27 @@
+nav {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px 40px 40px;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(44, 47, 51, 1);
+  border-radius: 16px;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(148, 151, 154, 1);
+
+
+  &:focus {
+    outline: none;
+    height: 100%;
+  }
+}
