@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+@import 'remixicon/fonts/remixicon.css';
+@import 'tachyons/css/tachyons.min.css';
+
+@import "styles/theming";
+@import "styles/button";
+
+
+* {
+  font-family: 'SF Pro Display', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
