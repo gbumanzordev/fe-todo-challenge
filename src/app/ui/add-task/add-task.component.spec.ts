@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LaneCardComponent } from './lane-card.component';
+import { AddTaskComponent } from './add-task.component';
 
-describe('LaneCardComponent', () => {
-  let component: LaneCardComponent;
-  let fixture: ComponentFixture<LaneCardComponent>;
+describe('AddTaskComponent', () => {
+  let component: AddTaskComponent;
+  let fixture: ComponentFixture<AddTaskComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LaneCardComponent]
+      imports: [AddTaskComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LaneCardComponent);
+    fixture = TestBed.createComponent(AddTaskComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
