@@ -1,0 +1,27 @@
+@if (task(); as task) {
+  <section>
+    <div class="flex justify-between items-center">
+      <p>{{ task.name }}</p>
+      <p>...</p>
+    </div>
+    <div class="flex justify-between items-center">
+      <p>{{ task.pointEstimate | estimates }}</p>
+      <app-tag [severity]="(task.dueDate | elapsedDays) > 0 ? 'error' : 'default'"
+        ><i class="ri-alarm-line mr2"></i>{{ task.dueDate | dueDate }}</app-tag
+      >
+    </div>
+    <div class="flex">
+      @for (item of task.tags; track item) {
+        <app-tag [severity]="item | assignedSeverity" [class.mr2]="!$last">{{ item | replaceUnderscore }}</app-tag>
+      }
+    </div>
+    <div class="flex justify-between items-center">
+      <app-avatar size="sm" [imageUrl]="task.assignee.avatar" />
+      <div class="icons flex">
+        <div class="icon-group"><i class="ri-attachment-2"></i></div>
+        <div class="icon-group mh3">3 <i class="ri-git-merge-line"></i></div>
+        <div class="icon-group">3 <i class="ri-chat-3-line"></i></div>
+      </div>
+    </div>
+  </section>
+}

@@ -1,4 +1,4 @@
-import { UserType } from './enums';
+import { UserType } from './types';
 
 export interface User {
   avatar: string;

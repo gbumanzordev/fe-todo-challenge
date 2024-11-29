@@ -1,5 +1,8 @@
-<div class="lanes">
-  <app-dashboard-lane title="Working" [data]="[]" />
-  <app-dashboard-lane title="In Progress" [data]="[]" />
-  <app-dashboard-lane title="Completed" [data]="[]" />
-</div>
+<article class="flex flex-column">
+  <app-action-bar (actionClicked)="callToAction()" (toggle)="toggle($event)" />
+  <section class="lanes overflow-x-auto">
+    @for (lane of lanes(); track lane.title) {
+      <app-dashboard-lane [title]="lane.title" [data]="lane.items" />
+    }
+  </section>
+</article>

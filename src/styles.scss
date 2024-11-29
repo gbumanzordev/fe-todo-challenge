@@ -1,11 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+//@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 @import 'remixicon/fonts/remixicon.css';
 @import 'tachyons/css/tachyons.min.css';
 
-@import "styles/theming";
-@import "styles/button";
+@import 'styles/theme';
 
+@import "styles/global";
 
 * {
   font-family: 'SF Pro Display', sans-serif;

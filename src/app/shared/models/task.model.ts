@@ -1,11 +1,11 @@
-import { PointEstimate, Status, TaskTag } from './enums';
+import { PointEstimate, Status, TaskTag } from './types';
 import { User } from './user.model';
 
 export interface Task {
   assignee: User;
   createdAt: Date;
   creator: User;
-  dueDate: Date;
+  dueDate: string;
   id: string;
   name: string;
   pointEstimate: PointEstimate;

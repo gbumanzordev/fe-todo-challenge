@@ -1,5 +1,4 @@
 .lanes {
-  display: grid;
-  grid-template-columns: repeat(3, 348px);
+  display: flex;
   gap: 32px;
 }

@@ -6,7 +6,29 @@ button {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.75px;
-  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  cursor: pointer;
+
+  &.plain {
+    background: transparent;
+  }
+
+  &.primary {
+    background-color: rgba(218, 88, 75, 1);
+  }
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 18px;
+
+  &.active {
+    color: rgba(218, 88, 75, 1);
+    border: 1px solid rgba(218, 88, 75, 1);
+  }
 }
