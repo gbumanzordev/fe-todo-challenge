@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "config": "ts-node ./src/scripts/setenv.mjs"
+    "config": "ts-node ./src/scripts/setenv.mjs",
+    "deploy": "npm run config && npm run build"
   },
   "private": true,
   "dependencies": {
