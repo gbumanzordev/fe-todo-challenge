@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AvatarComponent } from './ui/avatar/avatar.component';
-import { TagComponent } from './ui/tag/tag.component';
-import { FormControl } from '@angular/forms';
-import { NavBarComponent } from './ui/nav-bar/nav-bar.component';
-import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
+
+import { AvatarComponent } from '@ui/avatar/avatar.component';
+import { MainLayoutComponent } from '@pages/main-layout/main-layout.component';
+import { NavBarComponent } from '@ui/nav-bar/nav-bar.component';
+import { TagComponent } from '@ui/tag/tag.component';
 
 @Component({
   selector: 'app-root',

@@ -1,13 +1,14 @@
-import { patchState, signalStore, withComputed, withHooks, withMethods, withState } from '@ngrx/signals';
-import { TaskResponse, TasksApiResponse } from '../../shared/models/api-response.model';
 import { computed, inject } from '@angular/core';
-import { Apollo } from 'apollo-angular';
-import { pipe, switchMap, tap } from 'rxjs';
-import { GET_TASKS } from '../../shared/queries/get-tasks.query';
+import { patchState, signalStore, withComputed, withHooks, withMethods, withState } from '@ngrx/signals';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
 import { tapResponse } from '@ngrx/operators';
-import { Status } from '../../shared/models/types';
-import { Task } from '../../shared/models/task.model';
+import { Apollo } from 'apollo-angular';
+import { pipe, switchMap, tap } from 'rxjs';
+
+import { TaskResponse, TasksApiResponse } from '@shared/models/api-response.model';
+import { Status } from '@shared/models/types';
+import { Task } from '@shared/models/task.model';
+import { GET_TASKS } from '@shared/queries/get-tasks.query';
 
 type TasksState = {
   tasks: TaskResponse[];

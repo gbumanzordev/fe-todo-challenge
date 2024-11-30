@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AvatarComponent } from '../avatar/avatar.component';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+import { AvatarComponent } from '@ui/avatar/avatar.component';
 
 @Component({
   selector: 'app-nav-bar',

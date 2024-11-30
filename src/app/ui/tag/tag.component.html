@@ -1,4 +1,4 @@
-<div [class]="'tag tag-' + severity()">
+<div [class]="'flex text-body text-size-m font-bold tag tag-' + severity()">
   @if (displayControl()) {
     <input type="checkbox" [id]="'tag-checkbox-' + severity()" [formControl]="control" />
   }

@@ -1,44 +1,32 @@
-@use 'colors';
+@import 'colors';
 
 .tag {
-  display: flex;
   text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.75px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
   padding: 4px 16px;
   border-radius: 4px;
 
   &-default {
-    background: rgba(148, 151, 154, 0.1);
-    color: $white;
+    background: $color-neutral-2;
+    color: $color-neutral-1;
   }
 
   &-success {
     background: rgba(112, 178, 82, 0.1);
-    color: rgba(112, 178, 82, 1);
+    color: $color-secondary-4;
   }
 
   &-info {
     background: rgba(47, 97, 191, 0.1);
-    color: rgba(47, 97, 191, 1);
+    color: $color-info-4;
   }
 
   &-warn {
     background: rgba(229, 180, 84, 0.1);
-    color: rgba(229, 180, 84, 1);
+    color: $color-tertiary-4;
   }
 
   &-error {
     background: rgba(218, 88, 75, 0.1);
-    color: rgba(218, 88, 75, 1);
+    color: $color-primary-4;
   }
-
-  // TODO: Remove
-  margin-bottom: 4px;
 }

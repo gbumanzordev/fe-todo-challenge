@@ -1,6 +1,8 @@
 import { Component, input } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
+import { Severities } from '@shared/types/severities.type';
+
 @Component({
   selector: 'app-tag',
   standalone: true,
@@ -9,7 +11,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './tag.component.scss',
 })
 export class TagComponent {
-  severity = input<string>('default');
+  severity = input<Severities>('default');
   displayControl = input<boolean>(false);
 
   control = new FormControl();

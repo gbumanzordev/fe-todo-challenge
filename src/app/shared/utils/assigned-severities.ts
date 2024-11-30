@@ -1,5 +1,5 @@
-import { TaskTag } from '../models/types';
-import { Severities } from '../types/severities.type';
+import { TaskTag } from '@shared/models/types';
+import { Severities } from '@shared/types/severities.type';
 
 export const ASSIGNED_SEVERITIES: Record<TaskTag, Severities> = {
   ANDROID: 'success',

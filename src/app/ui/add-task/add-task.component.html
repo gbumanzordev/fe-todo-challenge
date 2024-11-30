@@ -1,7 +1,12 @@
 <form [formGroup]="form" (ngSubmit)="closeModal(true)">
   <div class="flex flex-column ph3">
     <div class="flex mv3">
-      <input type="text" class="text-body font-bold text-size-xl" placeholder="Task Title" />
+      <input
+        type="text"
+        class="text-body font-bold text-size-xl"
+        formControlName="taskTitle"
+        placeholder="Task Title"
+      />
     </div>
     <div class="flex justify-between items-center mv3">
       <mat-form-field>
@@ -44,7 +49,7 @@
     </div>
     <div class="action-buttons flex justify-end">
       <button type="button" class="plain" (click)="closeModal()">Cancel</button>
-      <button class="primary ml2">Create</button>
+      <button class="primary ml2">{{ dialogData ? 'Save Changes' : 'Create' }}</button>
     </div>
   </div>
 </form>

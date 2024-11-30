@@ -1,4 +1,4 @@
-<div class="lane">
+<div class="lane flex flex-column">
   <p class="text-size-l">{{ title() | replaceUnderscore }} ({{ data().length }})</p>
   @for (task of data(); track task.id) {
     <app-task-card [task]="task" />

@@ -18,7 +18,12 @@
     "target": "ES2022",
     "module": "ES2022",
     "lib": ["ES2022", "dom", "esnext.asynciterable"],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@ui/*": ["./src/app/ui/*"],
+      "@shared/*": ["./src/app/shared/*"],
+      "@pages/*": ["./src/app/pages/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

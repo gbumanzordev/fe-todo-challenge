@@ -4,8 +4,5 @@ import { Component } from '@angular/core';
   selector: 'app-my-tasks',
   standalone: true,
   templateUrl: './my-tasks.component.html',
-  styleUrl: './my-tasks.component.scss'
 })
-export class MyTasksComponent {
-
-}
+export class MyTasksComponent {}

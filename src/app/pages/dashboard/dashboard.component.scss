@@ -5,7 +5,4 @@
 
 article {
   max-height: calc(100vh - 164px);
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }

@@ -1,14 +1,10 @@
+@import 'colors';
+
 nav {
   border-radius: 24px;
-  display: flex;
-  flex-direction: column;
   padding: 12px 0;
   height: 100%;
-  background: rgba(44, 47, 51, 1);
-
-  img {
-    align-self: center;
-  }
+  background: $color-neutral-4;
 }
 
 ul {
@@ -16,28 +12,15 @@ ul {
   margin-top: 56px;
 
   li {
-    display: flex;
-    align-items: center;
     height: 56px;
     margin-bottom: 8px;
-    padding: 16px;
-    cursor: pointer;
+    color: $color-neutral-1;
 
-
-
-    &.active, &:hover {
+    &.active,
+    &:hover {
       transition: all 0.2s ease-in-out;
       background: linear-gradient(90deg, rgba(186, 37, 37, 0) 0%, rgba(210, 77, 77, 0.1) 100%);
-      border-right: solid 4px rgba(218, 88, 75, 1);
+      border-right: solid 4px $color-primary-4;
     }
-  }
-}
-
-a {
-  color: white;
-  text-decoration: none;
-
-  i {
-    margin-right: 16px;
   }
 }

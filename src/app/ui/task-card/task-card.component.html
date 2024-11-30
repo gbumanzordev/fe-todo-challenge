@@ -10,13 +10,15 @@
     </div>
     <div class="flex justify-between items-center">
       <p>{{ task.pointEstimate | estimates }}</p>
-      <app-tag [severity]="(task.dueDate | elapsedDays) > 0 ? 'error' : 'default'"
+      <app-tag [severity]="((task.dueDate | elapsedDays) > 0 ? 'error' : 'default') | as: severities"
         ><i class="ri-alarm-line mr2"></i>{{ task.dueDate | dueDate }}</app-tag
       >
     </div>
     <div class="flex">
       @for (item of task.tags; track item) {
-        <app-tag [severity]="item | assignedSeverity" [class.mr2]="!$last">{{ item | replaceUnderscore }}</app-tag>
+        <app-tag [severity]="item | assignedSeverity | as: severities" [class.mr2]="!$last">{{
+          item | replaceUnderscore
+        }}</app-tag>
       }
     </div>
     <div class="flex justify-between items-center">

@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { formatDate } from '@angular/common';
 
-import { getDiffDays } from '../utils/diff-days';
+import { getDiffDays } from '@shared/utils/diff-days';
 
 @Pipe({
   name: 'dueDate',

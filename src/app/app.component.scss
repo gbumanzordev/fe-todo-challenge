@@ -1,5 +1,7 @@
+@import 'colors';
+
 .wrapper {
-  background: rgba(34, 37, 40, 1);
+  background: $color-neutral-5;
   width: 100vw;
   height: 100vh;
 }

@@ -1,15 +1,16 @@
 import { ApplicationConfig, provideZoneChangeDetection, inject, importProvidersFrom } from '@angular/core';
+import { MatNativeDateModule } from '@angular/material/core';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
 import { provideRouter } from '@angular/router';
 
-import { routes } from './app.routes';
-import { provideHttpClient } from '@angular/common/http';
-import { provideApollo } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { InMemoryCache } from '@apollo/client/core';
+import { provideApollo } from 'apollo-angular';
 import { setContext } from '@apollo/client/link/context';
+
+import { routes } from './app.routes';
 import { environment } from '../environments/environment';
-import { provideAnimations } from '@angular/platform-browser/animations';
-import { MatNativeDateModule } from '@angular/material/core';
 
 export const appConfig: ApplicationConfig = {
   providers: [

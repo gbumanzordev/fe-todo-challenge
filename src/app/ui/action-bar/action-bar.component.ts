@@ -1,5 +1,6 @@
 import { Component, output } from '@angular/core';
-import { ButtonToggleComponent } from '../button-toggle/button-toggle.component';
+
+import { ButtonToggleComponent } from '@ui/button-toggle/button-toggle.component';
 
 @Component({
   selector: 'app-action-bar',

@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { PointEstimate } from '../models/types';
-import { POINT_ESTIMATES } from '../utils/point-estimates';
+
+import { PointEstimate } from '@shared/models/types';
+import { POINT_ESTIMATES } from '@shared/utils/point-estimates';
 
 @Pipe({
   name: 'estimates',

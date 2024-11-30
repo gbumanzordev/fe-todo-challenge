@@ -1,11 +1,11 @@
-<nav>
-  <img ngSrc="https://picsum.photos/40" alt="" width="40" height="40" />
+<nav class="flex flex-column">
+  <img class="self-center" ngSrc="icons/ravn-logo.svg" alt="Ravn Logo" width="40" height="40" />
   <ul>
-    <li routerLinkActive="active" routerLink="/dashboard">
-      <a><i class="ri-dashboard-line"></i> DASHBOARD</a>
+    <li class="flex items-center pointer pa3" routerLinkActive="active" routerLink="/dashboard">
+      <i class="ri-dashboard-line mr3"></i> DASHBOARD
     </li>
-    <li routerLinkActive="active" routerLink="/my-tasks">
-      <a><i class="ri-menu-line"></i> MY TASKS</a>
+    <li class="flex items-center pointer pa3" routerLinkActive="active" routerLink="/my-tasks">
+      <i class="ri-menu-line mr3"></i> MY TASKS
     </li>
   </ul>
 </nav>

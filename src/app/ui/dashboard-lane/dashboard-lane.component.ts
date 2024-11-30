@@ -1,8 +1,8 @@
 import { Component, input } from '@angular/core';
 
-import { TaskCardComponent } from '../task-card/task-card.component';
-import { TaskResponse } from '../../shared/models/api-response.model';
-import { ReplaceUnderscorePipe } from '../../shared/pipes/replace-underscore.pipe';
+import { TaskResponse } from '@shared/models/api-response.model';
+import { ReplaceUnderscorePipe } from '@shared/pipes/replace-underscore.pipe';
+import { TaskCardComponent } from '@ui/task-card/task-card.component';
 
 @Component({
   selector: 'app-dashboard-lane',

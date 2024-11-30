@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { TaskTag } from '../models/types';
-import { ASSIGNED_SEVERITIES } from '../utils/assigned-severities';
+
+import { TaskTag } from '@shared/models/types';
+import { ASSIGNED_SEVERITIES } from '@shared/utils/assigned-severities';
 
 @Pipe({
   name: 'assignedSeverity',
