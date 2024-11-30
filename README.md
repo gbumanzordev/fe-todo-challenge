@@ -1,27 +1,40 @@
-# FrontendChallenge
+# Frontend Task Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## Description
 
-## Development server
+This is a small project that uses Angular 18, GraphQL, and the basics of Angular Material to render a list of tasks from the API, providing (visually) the options to search, edit, delete and add new.
+It also adds custom styles, and utilizes third party utility libraries such as tachyons.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Working App Screenshots
 
-## Code scaffolding
+[![video](https://img.youtube.com/vi/video-id/0.jpg)](https://youtu.be/wIz0TO3U3xo)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Decision Making
 
-## Build
+- I decided to use Angular Material and use a very basic theme to be able to import pre-built components with no external colors.
+- I also decided to use tachyons to avoid having to write utilitary styles such as paddings, margins, flex positioning, etc.
+- I utilized NgRx SignalStore since it helps me automatically fetching the data from the API without having to dispatch any extra actions, effects, or even having to create selectors. And I am using a computed signal to be able to organize the returned data into the "buckets" or "lanes" of the board. You can usually utilize a service for the API Requests but I felt like it wasn't needed given I wasn't calling it anywhere else outside the store.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies/Libraries Used
 
-## Running unit tests
+- NgRx SignalStore
+- Tachyons
+- Angular Material
+- Apollo Client
+- Remix Icon
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Steps to test
 
-## Running end-to-end tests
+Test online:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Go to [https://gbumanzordev-todo-challenge.netlify.app](https://gbumanzordev-todo-challenge.netlify.app)
+2. Set an assigned token in localStorage (key: 'token', the app should auto retrieve it).
+3. You can change tabs and go back to the dashboard, it should now load the data.
+4. You can click the + button to open the "New Task" modal
+5. You can click the three dots for the Edit and Delete Options.
 
-## Further help
+To test locally:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Set an .env file similar to the .env.example in the repo
+2. Run `npm run config`, this will fill in the environment files for Angular automatically.
+3. Run the app with `npm start`
