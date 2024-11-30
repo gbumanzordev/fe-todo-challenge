@@ -6,8 +6,12 @@ This is a small project that uses Angular 18, GraphQL, and the basics of Angular
 It also adds custom styles, and utilizes third party utility libraries such as tachyons.
 
 ## Working App Screenshots
+![image](https://github.com/user-attachments/assets/3e90ac3f-caa4-4270-9cf6-9aa6b0ccfc55)
+![image](https://github.com/user-attachments/assets/63389444-e6c8-480e-89d0-5d159f6e5039)
+![image](https://github.com/user-attachments/assets/fc96b17b-6e36-43b1-9b1b-db1a6d880317)
+![image](https://github.com/user-attachments/assets/390dfdb9-26a5-48e4-acdc-923290f2b4fd)
 
-[![video](https://img.youtube.com/vi/video-id/0.jpg)](https://youtu.be/wIz0TO3U3xo)
+
 
 ## Decision Making
 
