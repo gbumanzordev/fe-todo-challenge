@@ -8,11 +8,12 @@ import { TasksStore } from '../../store/todos/todos.store';
 import { JsonPipe } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { AddTaskComponent } from '../../ui/add-task/add-task.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [DashboardLaneComponent, ActionBarComponent, JsonPipe, MatDialogModule],
+  imports: [DashboardLaneComponent, ActionBarComponent, JsonPipe, MatDialogModule, MatProgressSpinnerModule],
   templateUrl: './dashboard.component.html',
   providers: [TasksStore],
   styleUrl: './dashboard.component.scss',
@@ -21,26 +22,6 @@ import { AddTaskComponent } from '../../ui/add-task/add-task.component';
 export class DashboardComponent {
   readonly store = inject(TasksStore);
   private dialogService: MatDialog = inject(MatDialog);
-
-  lanes = computed(() => {
-    const foundLanes: Record<Status, TaskResponse[]> = {
-      BACKLOG: [],
-      TODO: [],
-      IN_PROGRESS: [],
-      DONE: [],
-      CANCELLED: [],
-    };
-
-    this.store.tasks().forEach((task) => {
-      foundLanes[task.status] = [...foundLanes[task.status], task];
-    });
-
-    return Object.entries(foundLanes)
-      .map(([key, value]) => {
-        return { title: key, items: value };
-      })
-      .filter((lane) => lane.items.length);
-  });
 
   toggle(index: number): void {
     console.log({ index });

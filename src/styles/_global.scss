@@ -1,3 +1,5 @@
+@import 'colors';
+
 // Display
 h1,
 h2,
@@ -49,7 +51,7 @@ a,
 li,
 div,
 .text-body {
-  color: rgba(255, 255, 255, 1);
+  color: $white;
   font-weight: 400;
   letter-spacing: 0.75px;
   text-align: left;

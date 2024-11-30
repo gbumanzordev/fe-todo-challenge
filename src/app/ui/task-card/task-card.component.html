@@ -2,7 +2,11 @@
   <section>
     <div class="flex justify-between items-center">
       <p>{{ task.name }}</p>
-      <p>...</p>
+      <button [matMenuTriggerFor]="menu" class="icon-button plain"><i class="ri-more-fill"></i></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="editTask()"><i class="ri-pencil-fill"></i> Edit</button>
+        <button mat-menu-item (click)="deleteTask()"><i class="ri-delete-bin-fill"></i> Delete</button>
+      </mat-menu>
     </div>
     <div class="flex justify-between items-center">
       <p>{{ task.pointEstimate | estimates }}</p>

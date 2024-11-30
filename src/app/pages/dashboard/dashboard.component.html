@@ -1,8 +1,18 @@
 <article class="flex flex-column">
   <app-action-bar (actionClicked)="callToAction()" (toggle)="toggle($event)" />
-  <section class="lanes overflow-x-auto">
-    @for (lane of lanes(); track lane.title) {
-      <app-dashboard-lane [title]="lane.title" [data]="lane.items" />
-    }
-  </section>
+  @if (store.isLoading()) {
+    <section class="flex justify-center items-center h-100">
+      <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+    </section>
+  } @else {
+    <section class="lanes overflow-x-auto">
+      @for (lane of store.tasksByStatus(); track lane.title) {
+        <app-dashboard-lane [title]="lane.title" [data]="lane.items" />
+      } @empty {
+        @if (!this.store.errors().length) {
+          There are no records to display. Please try refining your search.
+        }
+      }
+    </section>
+  }
 </article>

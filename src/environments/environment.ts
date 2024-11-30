@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: '',
+  apiUrl: 'https://syn-api-prod.herokuapp.com/graphql',
 };

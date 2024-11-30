@@ -1,3 +1,5 @@
+@use 'colors';
+
 .tag {
   display: flex;
   text-transform: uppercase;
@@ -14,7 +16,7 @@
 
   &-default {
     background: rgba(148, 151, 154, 0.1);
-    color: rgba(255, 255, 255, 1);
+    color: $white;
   }
 
   &-success {

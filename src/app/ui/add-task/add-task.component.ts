@@ -54,7 +54,7 @@ export class AddTaskComponent implements OnInit {
 
   closeModal(save = false): void {
     if (save) {
-      // TODO: Implement
+      console.log(this.form.value);
     }
 
     this.dialogRef.close();
